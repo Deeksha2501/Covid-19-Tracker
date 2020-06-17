@@ -1,0 +1,46 @@
+
+
+
+
+// fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php?country=India", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
+// 		"x-rapidapi-key": "8ffb8fbfaamsh270e8bcd068252ep1dc17djsn065a8f049ef5"
+// 	}
+// })
+// .then(response => {
+//     return response.json();
+// })
+// .then((data)=>{
+//     console.log(data);
+// })
+// .catch(err => {
+// 	console.log(err);
+// });
+
+// fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php?country=India", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
+// 		"x-rapidapi-key": "8ffb8fbfaamsh270e8bcd068252ep1dc17djsn065a8f049ef5"
+// 	}
+// })
+// .then(response => {
+//     return response.json();
+// })
+// .then((data)=>{
+//     console.log(data);
+//     const d = data.stat_by_country;
+//     let prev_date = d[0].record_date.split(' ')[0];
+//     console.log(prev_date);
+//     d.forEach((data_by_date)=>{
+//         if(data_by_date.record_date.split(' ')[0] !== prev_date){
+//             console.log(data_by_date);
+//             prev_date = data_by_date.record_date.split(' ')[0]
+//         }
+//     })
+// })
+// .catch(err => {
+// 	console.log(err);
+// });
