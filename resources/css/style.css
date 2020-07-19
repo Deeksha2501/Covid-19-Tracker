@@ -17,6 +17,11 @@ body{
     position: relative;
     height: auto;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -358,7 +363,7 @@ main{
   /*----FOOTER-----*/
   footer{
     height: 60px;
-
+position: absolute;
     margin: 0 auto;
     background-color: #000000;
     bottom: 0;
@@ -366,15 +371,10 @@ main{
 
 .footer-container{
     height: 100%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .copyright{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .copyright p{
