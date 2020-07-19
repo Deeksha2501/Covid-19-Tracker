@@ -14,6 +14,8 @@ body{
     background-color: black;
     color: white;
     font-size: 1.6rem;
+    position: relative;
+    height: auto;
 }
 html{
     font-size: 62.5%;
@@ -35,23 +37,22 @@ html{
     }
 }
 
-header{
+/* header{
     text-transform: uppercase;
     font-size: 2rem;
-    /* display: flex; */
+    /* display: flex; 
     align-items: center;
     text-align: center;
     max-width: 1200px;
     width: 100%;
     height: 60px;
     
-    margin: 0 auto;
+    /* margin: 0 auto; 
 }
-/* -------- LOGO -------- */
 .logo{
     padding-top: 2rem;
     width: 31vw;
-    /* display: flex; */
+    /* display: flex; 
     display: inline-block;
     align-items: center;
     padding-left: 20px;
@@ -65,7 +66,7 @@ header{
     font-size: 2.8vw;
     font-weight: bold;
     color: #e786ff;
-}
+} */
 /* 
 nav ul{
     font-size: 1.8rem;
@@ -81,10 +82,88 @@ nav ul li a {
     /* padding: 5px 10px; 
 } */
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+
+    margin: 0 auto;
+
+    background-color: transparent
+}
+/* -------- LOGO -------- */
+.logo{
+    margin-top: 31px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.logo img{
+    width: 60px;
+}
+.logo p {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+    color: #f09aff;
+}
+
+.dive-deep{
+    margin-right: 66px;
+    background: transparent;
+    font-size: 1.8rem;
+    color: white;
+    outline: 0;
+    border: 1px solid #f09aff;
+    border-radius: 5px;
+    padding: 9px 5px;
+    margin-top: 34px;
+    color: aliceblue;
+    transition: all .5s;
+}
+
+.dive-deep a{
+    color: inherit;
+}
+
+.dive-deep:hover{
+    transform: scale(1.1) translateY(-2px);
+    border: 1px solid black;
+    background-color: #e267f8;
+    color: black;
+}
+.dive-deep:active{
+    transform: translateY(1px);
+}
+
+/* -------- NAV -------- */
+/* nav{
+    
+} */
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:last-child{
+    padding-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #6a149b;
+    padding: 10px;
+}
+
 main{
     padding-top: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 .stats{
@@ -108,6 +187,10 @@ main{
 .recovered,
 .deaths{
     height: 100px;
+}
+
+.country{
+    position: relative;
 }
 
 .name{
@@ -152,8 +235,8 @@ main{
 }
 
 .search-country{
-    position: relative;
-    top: 10px;
+    position: absolute;
+    top: 66%;
 }
 .search-box{
     position: absolute;
@@ -165,7 +248,7 @@ main{
     width: 400px;
     height: 30px;
     background-color: #111;
-    z-index: 1;
+    z-index: 100;
 }
 .search-box input{
     width: 360px;
@@ -235,13 +318,50 @@ main{
     background: #FFF;
   }
 
+/* .chart{
+    position: relative;
+}
+
+#axes_line_chart{
+    position: absolute;
+    top: 20px;
+    left: 0;
+} */
+
+/* .dive-deep{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    padding: 15px 12px;
+    font-size: 2rem;
+    border-radius: 5px;
+    z-index: 30;
+}
+.dive-deep a{
+    text-decoration: none;
+    color: rgb(255, 55, 238);
+    cursor: pointer;
+
+} */
+
+/* .dive-deep:hover{
+
+} */
+
+
+
+
   /*----FOOTER-----*/
   footer{
-    max-width: 1200px;
     height: 60px;
 
     margin: 0 auto;
     background-color: #000000;
+    bottom: 0;
 }
 
 .footer-container{
@@ -295,6 +415,9 @@ main{
     .logo p {
         padding-top: 2.8vw;
         font-size: 4vw;
+    }
+    footer{
+display: none;
     }
 }
 

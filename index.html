@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources/css/style.css" />
-    <link rel="shortcut icon" href="resources/img/icon.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="resources/img/icon.png" type="image/png">
     <title>Covid-19 Tracker</title>
   </head>
   <body>
@@ -16,7 +16,9 @@
       <!-- <nav>
             <ul>
                 <li>
-                    <a href="#">Wanna to Contribute?</a> 
+                  <button class="dive-deep">
+                    <a href="#">Dive Deep into India</a>
+                  </button>
                 </li>
             </ul>
         </nav> -->
@@ -26,11 +28,12 @@
       <div class="stats">
         <div class="latest-report">
           <div class="country">
+            <!-- <div class="title">Country</div> -->
             <div class="name">
               Please Wait...
             </div>
             <div class="change-country">
-              change
+              Change
             </div>
             <div class="search-country hide">
               <div class="search-box">
@@ -66,6 +69,7 @@
         </div>
         <div style="text-align: center;" class="chart">
             <img class="loader" src="resources/img/loader.gif" alt="Loader">
+
           <canvas  id="axes_line_chart"></canvas>
         </div>
       </div>
