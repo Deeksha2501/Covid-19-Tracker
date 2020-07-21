@@ -2,7 +2,6 @@
 COVID 19 tracker where you can check the number of total, recovered, and active cases, and the total number of deaths worldwide.
 <br/>
 [Check it out!](https://covid-19-tracker-bay.vercel.app/)<br/><br/>
-[![HitCount](http://hits.dwyl.com/Deeksha2501/Covid-19-Tracker.svg)](http://hits.dwyl.com/Deeksha2501/Covid-19-Tracker)<br/>
 
 ### Images
 ![Image 1](/resources/img/img2.jpg)
